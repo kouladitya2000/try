@@ -98,7 +98,7 @@ def costing_page():
 
     # Upload Data to Prompt Button
     if st.button("Upload Data to Prompt"):
-        uploaded_files = storage_manager.list_blob_files(STORAGEACCOUNTURL, STORAGEACCOUNTKEY, CONTAINERNAME)
+        uploaded_files = storage_manager.list_blob_files()
         all_data = []
 
         for file_name in uploaded_files:
