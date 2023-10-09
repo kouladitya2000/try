@@ -102,7 +102,7 @@ def costing_page():
         all_data = []
 
         for file_name in uploaded_files:
-            file_data = storage_manager.read_blob_data(STORAGEACCOUNTURL, STORAGEACCOUNTKEY, CONTAINERNAME, file_name)
+            file_data = storage_manager.read_blob_data(file_name)
             if file_data:
                 all_data.append(file_data)
 
