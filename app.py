@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from newhelper import AzureBlobStorageManager, tanslator, calculate_cost
 
 # Configure OpenAI API
-load_dotenv('.env')
+load_dotenv()
 openai.api_type = os.getenv('api_type')
 openai.api_base = os.getenv('api_base')
 openai.api_version = os.getenv('api_version')
